@@ -5,9 +5,6 @@ import models.ConnectionRequest;
 import models.User;
 import play.mvc.*;
 
-/**
- * Created by lubuntu on 8/21/16.
- */
 public class ConnectionController extends Controller {
 
     public Result sendConnectionRequest(Long senderId, Long toId){
