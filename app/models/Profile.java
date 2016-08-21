@@ -17,4 +17,9 @@ public class Profile extends Model {
 
     public String company;
 
+    public Profile(String firstName, String lastName){
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
 }

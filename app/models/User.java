@@ -44,5 +44,10 @@ public class User extends Model {
         return null;
     }
 
+    public User(String email, String password){
+        this.email = email;
+        this.password = BCrypt.hashpw(password, BCrypt.gensalt());
+    }
+
 }
 
