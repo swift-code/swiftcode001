@@ -17,6 +17,8 @@ public class Profile extends Model {
 
     public String company;
 
+    public static Finder<Long, Profile> find = new Finder<Long, Profile>(Profile.class);
+
     public Profile(String firstName, String lastName){
         this.firstName = firstName;
         this.lastName = lastName;
