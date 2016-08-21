@@ -24,8 +24,6 @@ public class Application extends Controller{
             return ok(signupForm.errorsAsJson());
         }
 
-
-
         Profile profile = new Profile( signupForm.data().get("firstName"), signupForm.data().get("lastName") );
         Profile.db().save(profile);
 
